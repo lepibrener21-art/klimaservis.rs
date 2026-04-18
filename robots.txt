@@ -1,0 +1,18 @@
+# robots.txt for Servis Klima M — klimaservism.rs
+# Last updated: April 2025
+
+User-agent: *
+Allow: /
+
+# Block admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /wp-admin/
+Disallow: /*.php$
+
+# Sitemap location — keep in sync with <link rel="sitemap"> in HTML
+Sitemap: https://www.klimaservism.rs/sitemap.xml
+
+# Preferred host (canonical domain)
+Host: www.klimaservism.rs

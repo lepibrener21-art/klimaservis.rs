@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranica nije pronađena | Servis Klima M</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #f4f9fc 0%, #e9f2f7 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #1e2f4e;
+            padding: 20px;
+        }
+
+        /* Main card styling - mimicking the clean service cards from the original site */
+        .error-container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 35px -8px rgba(0, 20, 45, 0.15), 0 5px 10px -4px rgba(0, 0, 0, 0.05);
+            padding: 48px 40px;
+            text-align: center;
+            border: 1px solid rgba(0, 150, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        /* Decorative top border matching the site's "cooling" vibe */
+        .error-header {
+            margin-bottom: 24px;
+        }
+
+        .snowflake-icon {
+            font-size: 64px;
+            line-height: 1;
+            color: #0099ff;
+            filter: drop-shadow(0 4px 6px rgba(0, 153, 255, 0.2));
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 120px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            color: #1e3a6f;
+            line-height: 1;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 0 #e6f2ff;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #4a5c6c;
+            margin-bottom: 36px;
+            border-bottom: 1px dashed #b0d4f0;
+            padding-bottom: 30px;
+        }
+
+        .message p {
+            margin-bottom: 12px;
+        }
+
+        .message strong {
+            color: #1e3a6f;
+            font-weight: 600;
+        }
+
+        /* Action buttons - using the blue & clean style from the original site */
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: 1px solid transparent;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 40, 80, 0.08);
+        }
+
+        .btn-primary {
+            background-color: #0099ff;
+            color: white;
+            border-color: #0077cc;
+        }
+
+        .btn-primary:hover {
+            background-color: #0077cc;
+            box-shadow: 0 8px 16px rgba(0, 153, 255, 0.25);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: white;
+            color: #1e3a6f;
+            border-color: #cce5ff;
+        }
+
+        .btn-outline:hover {
+            background-color: #f0f9ff;
+            border-color: #0099ff;
+            box-shadow: 0 6px 12px rgba(0, 153, 255, 0.1);
+            transform: translateY(-1px);
+        }
+
+        /* Contact info styling similar to the footer/site feel */
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            font-size: 16px;
+            color: #3a5a78;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-icon {
+            background-color: #e6f2ff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0099ff;
+            font-size: 18px;
+        }
+
+        .phone-number {
+            font-weight: 700;
+            color: #1e3a6f;
+            text-decoration: none;
+        }
+
+        .phone-number:hover {
+            color: #0099ff;
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7a8f9f;
+            border-top: 1px solid #d9eaf5;
+            padding-top: 24px;
+        }
+
+        .footer-note a {
+            color: #1e3a6f;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-note a:hover {
+            color: #0099ff;
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .error-container {
+                padding: 36px 20px;
+            }
+            h1 {
+                font-size: 90px;
+            }
+            .subtitle {
+                font-size: 20px;
+            }
+            .btn {
+                padding: 12px 20px;
+                font-size: 16px;
+                width: 100%;
+            }
+            .actions {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="error-container">
+    <div class="error-header">
+        <!-- Snowflake / AC icon representing the brand -->
+        <div class="snowflake-icon">❄️</div>
+        <h1>404</h1>
+        <div class="subtitle">Stranica nije pronađena</div>
+    </div>
+
+    <div class="message">
+        <p>Izgleda da je <strong>vazduh ovde malo ređi</strong> — stranica koju tražite je uklonjena, premeštena ili nikada nije ni postojala.</p>
+        <p>Ali ne brinite, naši tehničari su uvek tu da vas vrate na pravi put.</p>
+    </div>
+
+    <div class="actions">
+        <a href="/" class="btn btn-primary">🏠 Početna stranica</a>
+        <a href="/kontakt" class="btn btn-outline">📞 Kontaktirajte nas</a>
+    </div>
+
+    <!-- Contact info matching the original site footer (064 3888858) -->
+    <div class="contact-info">
+        <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>Pozovite odmah:</span>
+            <a href="tel:+381643888858" class="phone-number">064 3888858</a>
+        </div>
+        <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <a href="mailto:info@klimaservism.rs" style="color:#1e3a6f; text-decoration:none;">info@klimaservism.rs</a>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        <span>📍 Beograd, Srbija</span> &nbsp;|&nbsp; 
+        <span>🕐 Pon–Pet 08–20h, Sub 09–15h</span><br>
+        <span style="display:block; margin-top:8px;">⭐ 4.98 ocena (520+ recenzija) — <a href="/">Servis Klima M</a></span>
+    </div>
+</div>
+
+<!-- Simple script to ensure phone number is displayed correctly if needed, but static is fine -->
+<script>
+    // You can add any future tracking or language preference here if needed.
+    // This is purely a static 404 page matching the brand.
+    (function() {
+        // Log error to console for developers (optional)
+        console.log('404 Error page displayed for: ' + window.location.pathname);
+    })();
+</script>
+
+</body>
+</html>

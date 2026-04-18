@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!--
+    NOTE: Hash anchors (#services, #contact etc.) are NOT valid sitemap URLs.
+    Google ignores the fragment part. Only include real page URLs here.
+    As you add new pages (e.g. /servis-klima, /montaza-klime), add them below.
+  -->
+
+  <url>
+    <loc>https://www.klimaservism.rs/</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.klimaservism.rs/og-image.jpg</image:loc>
+      <image:title>Servis Klima M – Profesionalni klima servis Beograd</image:title>
+    </image:image>
+  </url>
+
+  <!--
+    Future pages — uncomment and update as you create them:
+
+  <url>
+    <loc>https://www.klimaservism.rs/servis-klima-beograd/</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.klimaservism.rs/montaza-klime-beograd/</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.klimaservism.rs/punjenje-freona/</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.klimaservism.rs/ciscenje-klima/</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+
+</urlset>
