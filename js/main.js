@@ -21,7 +21,6 @@
  *   3. Find "chat":{"id": 123456789} — that number is your Chat ID
  *   4. Paste it below as TELEGRAM_CHAT_ID
  *
- * STEP 3 — Replace AW-XXXXXXXXX with your real Google Ads conversion ID
  * ============================================================
  */
 
@@ -185,22 +184,15 @@ if (leadForm) {
 
     const formData = new FormData(leadForm);
 
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'generate_lead');
+    }
+
     try {
       await sendToTelegram(formData);
 
       if (successMessage) successMessage.classList.add('show');
       leadForm.reset();
-
-      if (typeof gtagSendEvent !== 'undefined') {
-        // Fires conversion_event_request_quote then stays on the page
-        gtagSendEvent(undefined);
-      } else if (typeof gtag !== 'undefined') {
-        gtag('event', 'generate_lead', {
-          'event_category': 'form',
-          'event_label': 'kontakt_ponuda',
-          'value': 1
-        });
-      }
 
       setTimeout(() => {
         if (successMessage) successMessage.classList.remove('show');
@@ -255,7 +247,6 @@ if (phoneCallBtns.length > 0) {
     link.addEventListener('click', () => {
       if (typeof gtag !== 'undefined') {
         gtag('event', 'phone_call_click', { 'event_category': 'engagement', 'event_label': 'telefon_klik' });
-        gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/phone_call' });
       }
     });
   });

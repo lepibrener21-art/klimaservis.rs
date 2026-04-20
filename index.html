@@ -69,25 +69,7 @@
       'page_title': document.title,
       'page_location': window.location.href
     });
-    // IMPORTANT: Replace AW-XXXXXXXXX with your real Google Ads conversion ID
-    gtag('config', 'AW-XXXXXXXXX');
-  </script>
-
-  <!-- Google Ads conversion helper — delayed navigation -->
-  <script>
-    function gtagSendEvent(url) {
-      var callback = function () {
-        if (typeof url === 'string') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion_event_request_quote', {
-        'event_callback': callback,
-        'event_timeout': 2000,
-      });
-      return false;
-    }
-  </script>
+</script>
 
   <!-- ===== STRUCTURED DATA: LocalBusiness (rich results + Google Ads Quality Score) ===== -->
   <script type="application/ld+json">
