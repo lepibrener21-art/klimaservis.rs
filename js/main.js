@@ -27,8 +27,8 @@
 // ============================================
 // TELEGRAM CONFIG — fill these in!
 // ============================================
-const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';   // e.g. '7123456789:AAFxxxxxxxxxxxxxxxxxxxxxx'
-const TELEGRAM_CHAT_ID   = 'YOUR_CHAT_ID_HERE';     // e.g. '123456789'
+const TELEGRAM_BOT_TOKEN = '8779677533:AAHM9GFhOmqRZysstiJX1t8vR0siSvrESX0';   // e.g. '7123456789:AAFxxxxxxxxxxxxxxxxxxxxxx'
+const TELEGRAM_CHAT_ID   = '502091066';     // e.g. '123456789'
 
 // ============================================
 // DOM Elements
