@@ -111,7 +111,6 @@
     },
     "areaServed": [
       {"@type": "City", "name": "Beograd"},
-      {"@type": "City", "name": "Novi Sad"},
       {"@type": "AdministrativeArea", "name": "Srbija"}
     ],
     "hasOfferCatalog": {
@@ -261,6 +260,54 @@
         "name": "Klima Servis Beograd",
         "item": "https://www.klimaservism.rs/"
       }
+    ]
+  }
+  </script>
+
+  <!-- ===== STRUCTURED DATA: WebSite (entity recognition for DuckDuckGo/Bing) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Servis Klima M",
+    "alternateName": "Klima Servis Beograd",
+    "url": "https://www.klimaservism.rs",
+    "description": "Profesionalni klima servis u Beogradu — montaža, popravka, punjenje freona i čišćenje klima uređaja.",
+    "inLanguage": "sr",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Servis Klima M",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.klimaservism.rs/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- ===== STRUCTURED DATA: Organization (Knowledge Panel + contact point) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Servis Klima M",
+    "url": "https://www.klimaservism.rs",
+    "logo": "https://www.klimaservism.rs/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+381643888858",
+      "contactType": "customer service",
+      "availableLanguage": "Serbian",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    "sameAs": [
+      "https://www.facebook.com/servisklimam",
+      "https://www.instagram.com/servisklimam"
     ]
   }
   </script>
