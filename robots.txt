@@ -13,6 +13,3 @@ Disallow: /*.php$
 
 # Sitemap location — keep in sync with <link rel="sitemap"> in HTML
 Sitemap: https://www.klimaservism.rs/sitemap.xml
-
-# Preferred host (canonical domain)
-Host: www.klimaservism.rs
