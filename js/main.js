@@ -185,7 +185,7 @@ if (leadForm) {
     const formData = new FormData(leadForm);
 
     if (typeof gtag !== 'undefined') {
-      gtag('event', 'generate_lead');
+      gtag('event', 'generated_lead');
     }
 
     try {
