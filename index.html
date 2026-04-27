@@ -71,6 +71,22 @@
     });
 </script>
 
+  <!-- Google Ads phone call conversion helper -->
+  <script>
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion_event_contact_3', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+      });
+      return false;
+    }
+  </script>
+
   <!-- ===== STRUCTURED DATA: LocalBusiness (rich results + Google Ads Quality Score) ===== -->
   <script type="application/ld+json">
   {
@@ -351,7 +367,7 @@
         </div>
         <div class="hero-buttons">
           <a href="#kontakt-forma" class="btn" id="heroCtaBtn">❄️ Zakažite servis</a>
-          <a href="tel:+381643888858" class="btn btn-outline" id="phoneCallBtn">📞 064 3888858</a>
+          <a href="tel:+381643888858" class="btn btn-outline" id="phoneCallBtn" onclick="return gtagSendEvent(this.href)">📞 064 3888858</a>
         </div>
       </div>
       <div class="hero-image" role="img" aria-label="Servis klima uređaja ilustracija">
@@ -479,7 +495,7 @@
           <p>Provera curenja, vakumiranje sistema i precizno punjenje: R-32, R-410a, R-407c, R-22.</p>
         </div>
       </div>
-      <p class="price-note">* Izlazak na teren je besplatan. Sve cene su u dinarima (RSD) sa PDV-om. Za tačnu procenu pozovite <a href="tel:+381643888858">064 3888858</a>.</p>
+      <p class="price-note">* Izlazak na teren je besplatan. Sve cene su u dinarima (RSD) sa PDV-om. Za tačnu procenu pozovite <a href="tel:+381643888858" onclick="return gtagSendEvent(this.href)">064 3888858</a>.</p>
     </div>
   </section>
 
@@ -600,7 +616,7 @@
         </address>
       </div>
       <div>
-        <a href="tel:+381643888858" class="btn" id="footerPhoneBtn">📞 064 3888858</a>
+        <a href="tel:+381643888858" class="btn" id="footerPhoneBtn" onclick="return gtagSendEvent(this.href)">📞 064 3888858</a>
       </div>
     </div>
   </div>
@@ -614,7 +630,7 @@
         <div style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 12px;">❄️ Servis Klima M</div>
         <p>Profesionalni servis i montaža klima uređaja od 2008. godine. Vaš pouzdan partner za sveže i prijatne prostore u Beogradu.</p>
         <address style="font-style:normal; font-size:0.85rem; color:#bcd9d2; margin-top:12px; line-height:1.7;">
-          📞 <a href="tel:+381643888858" style="color:#bcd9d2;">064 3888858</a><br>
+          📞 <a href="tel:+381643888858" style="color:#bcd9d2;" onclick="return gtagSendEvent(this.href)">064 3888858</a><br>
           📧 <a href="mailto:info@klimaservism.rs" style="color:#bcd9d2;">info@klimaservism.rs</a><br>
           📍 Beograd, Srbija
         </address>
